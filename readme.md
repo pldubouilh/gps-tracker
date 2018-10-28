@@ -1,5 +1,6 @@
-alarm
+gps-tracker
 ==================
+[![Build Status](https://travis-ci.org/pldubouilh/gps-tracker.svg?branch=master)](https://travis-ci.org/pldubouilh/gps-tracker)
 
 fona 808 - [schematic](https://cdn-learn.adafruit.com/assets/assets/000/026/594/original/adafruit_products_schem.png?1437161178)
 teensy 3.2 - [pinout](https://www.pjrc.com/teensy/teensy32_front_pinout.png)
@@ -11,7 +12,7 @@ I intially bought an adafruit m0 express for this project but `rtczero` in its d
 the code is in `main.cpp` run simply with `platformio run --target upload`
 
 ### accelerometer
-I hacked up the original Adafruit MMA8451 lib to provide interrupt capacity ([code here](lib/Adafruit MMA8451 Interrupt)). Can't put it in low power, as it's not precise enough, but it doesn't drain much current (160uA iirc from the docs)
+I hacked up the original Adafruit MMA8451 lib to provide interrupt capacity ([code here](https://github.com/pldubouilh/gps-tracker/tree/master/lib/Adafruit%20FONA%20Library_ID634)). Can't put it in low power, as it's not precise enough, but it doesn't drain much current (160uA iirc from the docs)
 
 ### setup
 So it's pretty much based around the adafruit fona808 arduino shield. I built a custom "motherboard" to that shield off a teensy 3.2, which is powered directly on the lipo battery.

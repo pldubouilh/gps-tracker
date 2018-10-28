@@ -1,0 +1,49 @@
+{
+    "name": "Snooze", 
+    "version": "6.3.2", 
+    "keywords": [
+        "other"
+    ], 
+    "description": "Low Power for Teensy 3.x/LC", 
+    "frameworks": [
+        "arduino"
+    ], 
+    "platforms": [
+        "atmelavr", 
+        "atmelsam", 
+        "espressif32", 
+        "espressif8266", 
+        "intel_arc32", 
+        "microchippic32", 
+        "nordicnrf51", 
+        "nordicnrf52", 
+        "ststm32", 
+        "teensy", 
+        "timsp430"
+    ], 
+    "authors": [
+        {
+            "email": null, 
+            "url": null, 
+            "maintainer": true, 
+            "name": "Colin Duffy"
+        }
+    ], 
+    "repository": {
+        "type": "git", 
+        "url": "https://github.com/duff2013/Snooze"
+    }, 
+    "homepage": "http://github.com/duff2013/Snooze", 
+    "export": {
+        "include": null, 
+        "exclude": [
+            "extras", 
+            "docs", 
+            "tests", 
+            "test", 
+            "*.doxyfile", 
+            "*.pdf"
+        ]
+    }, 
+    "id": 1570
+}

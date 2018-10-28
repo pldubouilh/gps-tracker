@@ -1,0 +1,49 @@
+{
+    "description": "Arduino library for the MMA8451 Accelerometer sensors in the Adafruit shop", 
+    "repository": {
+        "url": "https://github.com/adafruit/Adafruit_MMA8451_Library", 
+        "type": "git"
+    }, 
+    "platforms": [
+        "atmelavr", 
+        "atmelsam", 
+        "espressif32", 
+        "espressif8266", 
+        "intel_arc32", 
+        "microchippic32", 
+        "nordicnrf51", 
+        "nordicnrf52", 
+        "ststm32", 
+        "teensy", 
+        "timsp430"
+    ], 
+    "export": {
+        "exclude": [
+            "extras", 
+            "docs", 
+            "tests", 
+            "test", 
+            "*.doxyfile", 
+            "*.pdf"
+        ], 
+        "include": null
+    }, 
+    "authors": [
+        {
+            "maintainer": true, 
+            "name": "Adafruit", 
+            "url": null, 
+            "email": "info@adafruit.com"
+        }
+    ], 
+    "keywords": [
+        "sensors"
+    ], 
+    "id": 1099, 
+    "name": "Adafruit MMA8451 Library", 
+    "frameworks": [
+        "arduino"
+    ], 
+    "version": "1.0.5", 
+    "homepage": null
+}

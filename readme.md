@@ -26,8 +26,8 @@ The board emits a GET request to `URL_TO_FETCH` with the following parameter:
 /e?report=0-1-2-3 (0 daily ping, 1 movement, 2 emergency, 3 emergency gsm)
      &bat=battery_percentage
      &sig=rssi_gsm
-     &pos=lat,long,date
-     &gps=
+     &pos=lat,long,date     
+     &gps=mode,fixstatus,utctime,lat,long,altitude,speed,course,fixmode,reserved1,HDOP,PDOP,VDOP,reserved2,view_satellites,used_satellites,reserved3,C/N0max,HPA,VPA
 ```
 
 The server controls the mode of the device via the http status code. `200` leaves the board in normal reporting, `418` makes the board report every 25 secs, and `421` makes the board report every 25 secs with GSM stats. A boilerplate code for the server is in `server.go`.
